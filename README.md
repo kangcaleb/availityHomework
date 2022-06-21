@@ -11,5 +11,9 @@
 3.	How would you explain to your grandmother what Availity does?
 > Availity is a company that makes computer software for the health care industry. It produces helpful computer programs so that Health plans, health care providers, and other 3rd party vendors to easily communicate, manage information, and work together. Availity seeks to use technology to make it easier for these parties to work together for the greater good and health of us all.
 
+4. You are tasked to write a checker that validates the parentheses of a LISP code.  Write a program (in Java or JavaScript) which takes in a string as an input and returns true if all the parentheses in the string are properly closed and nested
+> See ./parenthesesChecker.js
+
+
 
     
