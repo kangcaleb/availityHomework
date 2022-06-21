@@ -1,4 +1,4 @@
-const parenthesisChecker = (string) => {
+const parenthesesChecker = (string) => {
 
     const stack = [];
     for(let i=0; i<string.length; i++) {
@@ -17,4 +17,4 @@ const parenthesisChecker = (string) => {
     return stack.length == 0;
 }
 
-console.log(parenthesisChecker(   "[()]{}{[()()]()}"  ));
+console.log(parenthesesChecker(   "[()]{}{[()()]()}"  ));
