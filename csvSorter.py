@@ -11,7 +11,7 @@ insuranceDict = {}
 for row in reader:
     insurance = row[3]
     id = row[0]
-    version = row[2]
+    version = int(row[2])
 
     if insurance not in insuranceDict:
         insuranceDict[insurance] = {}
@@ -19,7 +19,7 @@ for row in reader:
     if id not in insuranceDict[insurance]:
         insuranceDict[insurance][id] = row
     else:
-        if version > insuranceDict[insurance][id][2]:
+        if version > int(insuranceDict[insurance][id][2]):
             insuranceDict[insurance][id] = row
 
 for insurance, usersDict in insuranceDict.items():
@@ -36,5 +36,5 @@ for insurance, usersDict in insuranceDict.items():
         file.write(row +'\n')
 
     file.close()
-    
+
 print('Done')
